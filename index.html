@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Daycare</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container bg bg-secondary"> 
+<br>
+<div>
+
+<div class="container bg-light mb-4 border border-dark" id="greeting" >
+    <img src="images/paws.jpeg">
+    <h1>Cat Daycare Sign up!</h1><br>
+ </div>
+
+
+<div class="card bg bg-light">
+    <p class="mt-4" id="waitlist">There is currently a waitlist for Cat Daycare. <br>
+        Please join the waitlist.</p>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="start-date">Desired start date</label>
+                    <input type="date" class="form-control" id="start-date">
+                </div>
+            </div>                         
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-name">Cat Name</label>
+                    <input type="text" class="form-control" id="new-name" placeholder="Name">
+                </div>
+            </div>                    
+        </div>    
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-age">Age</label>
+                        <input type="text" class="form-control" id="new-age" placeholder="Age">
+                    </div>
+                </div>                    
+            </div>
+        <div>
+            <button id="attach" class="btn btn-primary form-control">Join</button>    
+        </div>
+    </div>
+</div>
+<table id="waitlist" class="table table-light table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th>Date Joined</th>
+            <th>Cat Name</th>
+            <th>Age</th>        
+        </tr>
+    </thead>
+</table>
+
+
+
+
+<script src="./cats.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+ 
+</body>
+</html>
